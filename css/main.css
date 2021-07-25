@@ -48,10 +48,19 @@ header nav a:hover{
 	color: #fff;
 }
 
+@keyframes fade {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+
 
 .filme-principal{
+
+
+
+
 	font-size: 16px;
-	height: 400px;
+	height: 800px;
 	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)100%), url(../img/capa-houseofcards.jpg);
 	background-size: cover;
 	
@@ -60,6 +69,16 @@ header nav a:hover{
 	justify-content: center;
 	align-items: flex-start;
 
+	animation-name: fade;
+	animation-duration: 2s;
+  
+  	transition: opacity 2s ease-in-out;
+
+
+}
+
+.filme-principal .fade{
+	opacity:1;
 }
 
 .filme-principal .descricao{
@@ -120,8 +139,14 @@ header nav a:hover{
 	width: 100%;
 	height: 100%;
 
-	  transition: width 0.3s, height 0.3s, transform 1s;
+	  
 
+}
+
+.item:hover{
+	
+	cursor: pointer;
+	
 }
 
 .item:hover .overlay{
@@ -131,6 +156,7 @@ header nav a:hover{
 }
 
 .overlay {
+
   position: absolute;
   top: 75%;
   bottom: 0;
@@ -147,7 +173,7 @@ header nav a:hover{
 .item:hover p{
 	display: block;
 	position: absolute;
-	z-index: 1;
+	
 }
 
 .carrosel-filmes{
