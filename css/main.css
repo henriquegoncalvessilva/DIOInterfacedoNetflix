@@ -61,13 +61,14 @@ header nav a:hover{
 
 	font-size: 16px;
 	height: 800px;
-	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)100%), url(../img/capa-armyDead.jpg);
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)50%), url(../img/capa-armyDead.jpg) no-repeat;
 	background-size: cover;
-	
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+
 
 	animation-name: fade;
 	animation-duration: 2s;

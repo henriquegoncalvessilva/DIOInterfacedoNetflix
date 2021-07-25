@@ -45,11 +45,10 @@ let covermiraculous = "./img/capa-miraculous.jpg"
 function changeinfo(tituloMovie,descricaoMovie,urlImg) {
 	titulo[0].innerHTML = tituloMovie;
 	descricao[0].innerHTML = descricaoMovie;
-	backgroundImageCanvas[0].style.background="url("+urlImg+")";
+	  	backgroundImageCanvas[0].style.background="linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)50%), url("+urlImg+")";
 	backgroundImageCanvas[0].style.backgroundSize="cover";
 	backgroundImageCanvas[0].style.animationName ="fade";
-	backgroundImageCanvas[0].style.animationDuration = "1s";
-  	backgroundImageCanvas[0].style.transition="all 1s";
-
+	backgroundImageCanvas[0].style.animationDuration = "2s";
+  	backgroundImageCanvas[0].style.transition="opacity 2s ease-in-out";
 
 }
